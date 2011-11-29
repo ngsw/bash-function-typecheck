@@ -11,7 +11,7 @@ function typecheck()
     password=`mkpasswd -l 6 -s 0`
   fi
 
-  echo -e "`recho if run , enter this code`:`yellow_echo ${password}`\n"
+  echo -e "`red_cho if run , enter this code`:`yellow_echo ${password}`\n"
   echo -n "type code:"
   read readpassword
   if [ "${password}" = "${readpassword}" ];then
